@@ -307,7 +307,7 @@ def scraper_deceit2_(user_id):
     ctypes.windll.kernel32.SetConsoleTitleW(f"Nombre : {nombre} | Valides : {valides} | Invalides : {invalides} | Proxy : {proxy}")
 
 def sauvegarder_utilisateurs():
-    output_path = f'utilisateurs.{format}'
+    output_path = f'users.{format}'
     directory = os.path.dirname(output_path)
 
     if directory:
@@ -336,6 +336,6 @@ def scraper_deceit2():
                 sauvegarder_utilisateurs()
 
     sauvegarder_utilisateurs()
-    print(f"\n\n{Fore.GREEN}[+] Données enregistrées dans -> {Fore.RESET}utilisateurs.{format}")
+    print(f"\n\n{Fore.GREEN}[+] Données enregistrées dans -> {Fore.RESET}users.{format}")
 
 scraper_deceit2()
